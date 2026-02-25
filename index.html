@@ -1,56 +1,100 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="src/styles.css" />
-    <title>Bienvenidos a Asunción</title>
-  </head>
-  <body>
+    <title>Welcome to Asunción</title>
+</head>
+<body>
     <div class="container">
-      <header>
-        <h1>Welcome to Asunción</h1>
-        <h2>Capital city of Paraguay</h2>
-      </header>
+        <header>
+            <h3>.TRAVEL.</h3>
+            <h1>Welcome to Asunción</h1>
+            <h2>Capital city of Paraguay</h2>
+            <a href="#about-city" class="btn-main">Learn more</a>
+        </header>
 
-      <hr />
+        <hr />
 
-      <main>
-        <section class="city-info">
-          <div class="grid">
-            <div class="info-card">
-              <h3>☀️ Clima</h3>
-              <p>Conocida por su clima cálido y sus hermosos lapachos que florecen en invierno.</p>
-            </div>
-            <div class="info-card">
-              <h3>📍 Ubicación</h3>
-              <p>Situada a orillas del Río Paraguay, es el centro político y cultural del país.</p>
-            </div>
-          </div>
-
-          <button class="explore-btn" onclick="alert('¡Pronto verás más lugares increíbles!')">
-            Explorar más
-          </button>
+        <section id="about-city">
+            <h2>Why Asunción?</h2>
+            <h3>Asunción, the Mother of Cities</h3>
+            <p>
+                Founded in 1537, Asunción is one of the oldest cities in South America. It is known as the "Mother of Cities" because it was the starting point for colonial expeditions that founded more than 70 cities across the region.
+            </p>
+            <p>
+                Today, you can still see traces of history on every corner. Beyond the modern shopping malls and new skyscrapers, the historic center preserves its colorful facades, cobblestone streets, and the iconic "Lapacho" trees that paint the city in pink and yellow during winter. Walking along the Costanera at sunset, seeing the illuminated Lopez Palace, and feeling the warmth of its people is a truly unique experience.
+            </p>
         </section>
-      </main>
 
-      <footer>
-        This project was coded by <strong>Ale Canclini</strong> and is
-        <a
-          href="https://github.com/tu-usuario/asuncion-project"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          open sourced</a
-        >
-      </footer>
+        <hr />
+
+        <section class="places">
+            <h2>CAFÉS & SPOTS</h2>
+            <h3>My favorite spots in Asunción</h3>
+
+            <div class="place-card">
+                <h4>Loma San Jerónimo</h4>
+                <p>A picturesque neighborhood full of colors, narrow passages, and an incredible view of the port.</p>
+                <p><strong>Address:</strong> San Jerónimo Neighborhood, Asunción.</p>
+                <strong>What I like about it:</strong>
+                <p>It's super photogenic! Getting lost in its alleys and having a drink on the terraces while watching the river is the best part.</p>
+                <a href="https://www.asuncion.gov.py/" target="_blank">Learn more</a>
+            </div>
+
+            <div class="place-card">
+                <h4>El Café de Acá</h4>
+                <p>A cozy place that feels like being in the backyard of a traditional Paraguayan home.</p>
+                <p><strong>Address:</strong> Tte. Vera & Dr. Morra.</p>
+                <strong>What I like about it:</strong>
+                <p>They have the best "cocido quemado" and "mbeju" in town. The atmosphere is relaxed and the staff is very friendly.</p>
+                <a href="https://www.elcafedeaca.com/" target="_blank">Learn more</a>
+            </div>
+        </section>
+
+        <hr />
+
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <h3>My photos from Asunción</h3>
+            <div class="instagram-grid">
+                <p>(Add your Instagram embeds here for the Costanera or the Pantheon)</p>
+            </div>
+        </section>
+
+        <hr />
+
+        <section class="links">
+            <h2>More about Asunción</h2>
+            <ul>
+                <li><a href="https://www.dinac.gov.py/" target="_blank">Silvio Pettirossi International Airport</a></li>
+                <li><a href="https://maps.google.com" target="_blank">Map of Asunción</a></li>
+                <li><a href="#" target="_blank">Public transport guide</a></li>
+            </ul>
+        </section>
+
+        <hr />
+
+        <section class="about-me">
+            <h2>About me</h2>
+            <p>
+                Hi! My name is <strong>Ale Canclini</strong> and I live in Asunción. As an Environmental Engineer, I am very passionate about my city and its sustainable development. I created this page as part of a project for <strong>SheCodes Responsive</strong> to develop my coding skills.
+            </p>
+        </section>
+
+        <hr />
+
+        <footer>
+            This project was coded by <strong>Ale Canclini</strong> and is
+            <a href="https://github.com/tu-usuario/asuncion-project" target="_blank" rel="noopener noreferrer">open sourced</a>
+        </footer>
+    </div>
+</body>
+</html>
     </div>
   </body>
 </html>

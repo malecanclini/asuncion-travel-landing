@@ -1,0 +1,47 @@
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 144px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7f6; /* Un gris muy claro y limpio */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  color: #00509d; /* Azul profundo, estilo azulejo portugués */
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: #555;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Estilo para el enlace */
+a {
+  color: #f2a900; /* Amarillo vibrante como los tranvías de Lisboa */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}

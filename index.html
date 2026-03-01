@@ -2,98 +2,167 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Footer Preview – Asunción</title>
     <link rel="stylesheet" href="src/styles.css" />
+    <title>Welcome to Asunción</title>
   </head>
   <body>
+    <div class="container">
 
-    <footer>
-      <div class="footer-grid">
+      <!-- ── HEADER ── -->
+      <header>
+        <h3>.TRAVEL.</h3>
+        <h1>Welcome to Asunción</h1>
+        <h2>Capital city of Paraguay</h2>
+        <a href="#more">Learn more</a>
+      </header>
 
-        <!-- COL 1: Links útiles -->
-        <div class="footer-col">
-          <h4>Links útiles</h4>
-          <ul>
-            <li>
-              <a href="https://www.dinac.gov.py/" target="_blank">
-                Aeropuerto Internacional
-              </a>
-            </li>
-            <li>
-              <a href="https://maps.google.com" target="_blank">
-                Mapa de Asunción
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-                Guía de transporte público
-              </a>
-            </li>
-            <li>
-              <a href="https://www.asuncion.gov.py/" target="_blank">
-                Municipalidad de Asunción
-              </a>
-            </li>
-          </ul>
-        </div>
+      <!-- ── HERO IMAGE ── -->
+      <img
+        src="images/city.jpg"
+        alt="Asunción city view"
+        class="hero-image"
+      />
 
-        <!-- COL 2: Sobre mí -->
-        <div class="footer-col">
-          <h4>Sobre mí</h4>
-          <p>
-            Hola! Soy <strong>Ale Canclini</strong>, vivo en Asunción y soy
-            Ingeniera Ambiental. Creé esta página como parte de un proyecto para
-            <strong>SheCodes Responsive</strong>.
-          </p>
-        </div>
+      <!-- ── WHY ASUNCIÓN ── -->
+      <section class="about-city" id="more">
+        <h2>Why Asunción?</h2>
+        <h3>Asunción, the Mother of Cities</h3>
+        <p>
+          Founded in 1537, Asunción is one of the oldest cities in South America.
+          It is known as the "Mother of Cities" because it was the starting point
+          for colonial expeditions that founded more than 70 cities across the region,
+          including Buenos Aires and Santa Cruz de la Sierra.
+        </p>
+        <p>
+          You can still see traces of history on every corner. Beyond the modern
+          shopping malls and new skyscrapers, the historic center preserves its
+          colorful facades, cobblestone streets, and the iconic Lapacho trees that
+          paint the city in pink and yellow during winter. Walking along the Costanera
+          at sunset, seeing the illuminated López Palace, and feeling the warmth of
+          its people is a truly unique experience.
+        </p>
+      </section>
 
-        <!-- COL 3: Sobre el sitio -->
-        <div class="footer-col">
-          <h4>Sobre este sitio</h4>
-          <p>
-            Desarrollado para practicar mis habilidades de programación web.
-            El código es
-            <a href="https://github.com/malecanclini" target="_blank" style="color:#c8a96e; text-decoration:none;">
-              open source
-            </a>
-            y está disponible en GitHub.
-          </p>
-        </div>
+      <!-- ── CAFÉS & SPOTS ── -->
+      <section class="cafes">
+        <h2>CAFÉS & SPOTS</h2>
+        <h3>My favorite spots in Asunción</h3>
 
-        <!-- COL 4: Redes sociales -->
-        <div class="footer-col">
-          <h4>Redes sociales</h4>
-          <div class="social-links">
-            <a href="#" target="_blank">
-              <span class="social-icon">in</span>
-              LinkedIn
-            </a>
-            <a href="#" target="_blank">
-              <span class="social-icon">ig</span>
-              Instagram
-            </a>
-            <a href="#" target="_blank">
-              <span class="social-icon">gh</span>
-              GitHub
-            </a>
+        <div class="cafe-grid">
+
+          <div class="cafe-card">
+            <img src="images/cafes/loma.jpg" alt="Loma San Jerónimo" />
+            <h4>Loma San Jerónimo</h4>
+            <p>A picturesque neighborhood full of colors, narrow passages, and an incredible view of the port.</p>
+            <h5>Address:</h5>
+            <p>San Jerónimo Neighborhood, Asunción</p>
+            <h5>What I like about it</h5>
+            <p>It's super photogenic! Getting lost in its alleys and having a drink on the terraces while watching the river is the best part.</p>
+            <a href="https://www.asuncion.gov.py/" target="_blank">Learn more</a>
           </div>
+
+          <div class="cafe-card">
+            <img src="images/cafes/cafe-de-aca.jpg" alt="El Café de Acá" />
+            <h4>El Café de Acá</h4>
+            <p>A cozy place that feels like being in the backyard of a traditional Paraguayan home.</p>
+            <h5>Address:</h5>
+            <p>Tte. Vera &amp; Dr. Morra</p>
+            <h5>What I like about it</h5>
+            <p>They have the best "cocido quemado" and "mbeju" in town. The atmosphere is relaxed and the staff is very friendly.</p>
+            <a href="https://www.elcafedeaca.com/" target="_blank">Learn more</a>
+          </div>
+
+          <div class="cafe-card">
+            <img src="images/cafes/maca.jpg" alt="Maca Café" />
+            <h4>Maca Café</h4>
+            <p>A modern specialty coffee spot in the heart of Villa Morra with great brunch options.</p>
+            <h5>Address:</h5>
+            <p>Av. Santa Teresa, Villa Morra</p>
+            <h5>What I like about it</h5>
+            <p>The cold brew is incredible and the space is beautifully designed. Perfect for working remotely or catching up with friends.</p>
+            <a href="https://maps.google.com" target="_blank">Learn more</a>
+          </div>
+
         </div>
+      </section>
 
-      </div>
+      <!-- ── GALLERY ── -->
+      <section class="gallery">
+        <h2>Gallery</h2>
+        <h3>My photos from Asunción</h3>
+        <div class="instagram-grid">
+          <!-- Replace these with your own Instagram embed codes -->
+          <blockquote
+            class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/p/CostaneraAsuncion/"
+            data-instgrm-version="14"
+          >
+            <a href="https://www.instagram.com/explore/tags/asuncion/" target="_blank">
+              View photos of Asunción on Instagram
+            </a>
+          </blockquote>
+        </div>
+      </section>
 
-      <!-- Bottom bar -->
-      <div class="footer-bottom">
-        <p>Coded by <strong>Ale Canclini</strong> · 2025</p>
-        <span class="footer-tag">.TRAVEL. Asunción</span>
-      </div>
-    </footer>
+      <!-- ── FOOTER ── -->
+      <footer>
+        <section class="grid">
+          <div>
+            <h3>More about Asunción</h3>
+            <ul>
+              <li>
+                <a href="https://www.dinac.gov.py/" target="_blank">
+                  Silvio Pettirossi International Airport
+                </a>
+              </li>
+              <li>
+                <a href="https://maps.google.com" target="_blank">
+                  Map of Asunción
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  Public transport guide
+                </a>
+              </li>
+            </ul>
+          </div>
 
+          <div>
+            <h3>About me</h3>
+            <p>
+              Hi! My name is Ale Canclini and I live in Asunción. As an
+              Environmental Engineer, I am very passionate about my city and its
+              sustainable development. I created this page as part of a project
+              for SheCodes Responsive to develop my coding skills.
+            </p>
+          </div>
+
+          <div>
+            <h3>About this website</h3>
+            <p>
+              I created this page as part of a project for SheCodes Responsive
+              to develop my coding skills.
+              <br />
+              This project was coded by Ale Canclini and is
+              <a
+                href="https://github.com/tu-usuario/asuncion-project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >open sourced</a>
+            </p>
+          </div>
+        </section>
+      </footer>
+
+    </div>
   </body>
 </html>

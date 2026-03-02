@@ -302,3 +302,55 @@ footer {
     font-size: 1.9rem;
   }
 }
+/* Contenedor visual: Imagen + Mapa */
+.cafe-visual {
+  display: flex;
+  width: 100%;
+  height: 200px; /* Altura fija igual que en tu referencia */
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+}
+
+/* La imagen ocupa la mitad */
+.cafe-visual img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0; /* Quitamos el radio individual */
+  margin-bottom: 0;
+}
+
+/* El mapa ocupa la otra mitad */
+.map-container {
+  width: 50%;
+  height: 100%;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ── RESPONSIVE PARA EL MAPA ── */
+@media (max-width: 768px) {
+  /* En tablets, mantenemos el 50/50 o bajamos altura si es necesario */
+  .cafe-visual {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* En móviles muy pequeños, apilamos la imagen y el mapa */
+  .cafe-visual {
+    flex-direction: column;
+    height: 300px; /* Más alto para que quepan ambos apilados */
+  }
+  .cafe-visual img, 
+  .map-container {
+    width: 100%;
+    height: 150px;
+  }
+}

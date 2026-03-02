@@ -198,18 +198,25 @@ header a:hover {
 }
 
 /* ── FOOTER ── */
+/* ── FOOTER ── */
 footer {
   background-color: #222;
   color: #ccc;
-  padding: 60px 40px;
-  margin-top: 40px;
+  padding: 60px 20px; /* Padding interno */
+  margin-top: 60px;   /* Separación de la galería */
+  width: 100vw;       /* Ocupa todo el ancho de la pantalla */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  max-width: 960px;
+  max-width: 960px; /* Se alinea con el resto de tu contenido */
   margin: 0 auto;
 }
 
@@ -220,11 +227,39 @@ footer {
   margin-bottom: 18px;
 }
 
-.footer-grid ul { list-style: none; }
-.footer-grid ul li { margin-bottom: 10px; }
-.footer-grid a { color: #aaa; text-decoration: none; font-size: 0.9rem; }
-.footer-grid a:hover { color: #fff; }
+.footer-grid ul {
+  list-style: none;
+}
 
+.footer-grid ul li {
+  margin-bottom: 10px;
+}
+
+.footer-grid a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.footer-grid a:hover {
+  color: #fff;
+}
+
+.footer-grid p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #aaa;
+}
+
+/* Ajuste Responsive para el Footer */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr; /* Una columna en tablets/celulares */
+    text-align: center;
+    gap: 30px;
+  }
+}
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   header h1 { font-size: 2.4rem; }

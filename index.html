@@ -16,7 +16,7 @@
   <body>
     <div class="container">
 
-      <!-- HEADER -->
+      <!-- ✅ HERO -->
       <header>
         <h3>.TRAVEL.</h3>
         <h1>Welcome to Asunción</h1>
@@ -24,7 +24,6 @@
         <a href="#more">Learn more</a>
       </header>
 
-      <!-- HERO IMAGE -->
       <img
         src="https://as2.ftcdn.net/jpg/06/16/19/83/1000_F_616198396_jkXk5nEyGC4bWnhND4JAyxDILtdkpUo5.jpg"
         alt="Asunción city view"
@@ -51,7 +50,7 @@
         </p>
       </section>
 
-      <!-- SPOTS -->
+      <!-- ✅ CARDS + GRID -->
       <section class="cafes">
         <h2>SPOTS</h2>
         <h3>My favorite spots in Asunción</h3>
@@ -108,23 +107,135 @@
         </div>
       </section>
 
-      <!-- GALLERY -->
-      <section class="gallery">
-        <h2>Gallery</h2>
-        <h3>My photos from Asunción</h3>
-        <div class="instagram-grid">
-          <!-- 
-            Para agregar tus fotos:
-            1. Abrí el post en Instagram
-            2. Click en los 3 puntitos → "Insertar" (Embed)
-            3. Copiá el <blockquote> y pegalo acá (repetí 3 veces)
-          -->
+      <!-- ✅ HTML TABLE -->
+      <section class="weather">
+        <h2>Weather</h2>
+        <h3>Climate guide by season</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Season</th>
+                <th>Months</th>
+                <th>Avg. Temp</th>
+                <th>Rainfall</th>
+                <th>What to expect</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>🌸 Spring</td>
+                <td>Sep – Nov</td>
+                <td>22 – 28 °C</td>
+                <td>Moderate</td>
+                <td>Warm days, blooming lapachos, occasional storms</td>
+              </tr>
+              <tr>
+                <td>☀️ Summer</td>
+                <td>Dec – Feb</td>
+                <td>28 – 38 °C</td>
+                <td>High</td>
+                <td>Very hot and humid, afternoon thunderstorms</td>
+              </tr>
+              <tr>
+                <td>🍂 Autumn</td>
+                <td>Mar – May</td>
+                <td>18 – 26 °C</td>
+                <td>Moderate</td>
+                <td>Pleasant temperatures, ideal for sightseeing</td>
+              </tr>
+              <tr>
+                <td>❄️ Winter</td>
+                <td>Jun – Aug</td>
+                <td>10 – 20 °C</td>
+                <td>Low</td>
+                <td>Mild and dry, lapachos bloom pink & yellow</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
-    </div><!-- cierre .container -->
+      <!-- ✅ GALLERY — CSS FILTERS + EMBEDS (Instagram grid) -->
+      <section class="gallery">
+        <h2>Gallery</h2>
+        <h3>My photos from Asunción</h3>
 
-    <!-- FOOTER (fuera del container para que ocupe todo el ancho) -->
+        <!-- CSS Filters applied to photo grid -->
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Palacio_de_los_Lopez_-_Asuncion%2C_Paraguay.jpg/1280px-Palacio_de_los_Lopez_-_Asuncion%2C_Paraguay.jpg"
+              alt="Palacio de López"
+              class="filter-warm"
+            />
+            <p>Palacio de López</p>
+          </div>
+          <div class="photo-item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Panteon_nacional_de_los_heroes_-_asuncion_paraguay.jpg/1280px-Panteon_nacional_de_los_heroes_-_asuncion_paraguay.jpg"
+              alt="Panteón de los Héroes"
+              class="filter-cool"
+            />
+            <p>Panteón de los Héroes</p>
+          </div>
+          <div class="photo-item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Costanera_de_Asunci%C3%B3n.jpg/1280px-Costanera_de_Asunci%C3%B3n.jpg"
+              alt="Costanera de Asunción"
+              class="filter-vivid"
+            />
+            <p>Costanera</p>
+          </div>
+        </div>
+
+        <!-- Instagram embeds -->
+        <div class="instagram-grid">
+          <!-- 
+            📌 Para agregar tus embeds de Instagram:
+            1. Abrí el post en instagram.com
+            2. Click en los 3 puntitos → "Insertar" (Embed)
+            3. Copiá el <blockquote...> y pegalo acá (reemplazá cada bloque)
+          -->
+
+          <blockquote
+            class="instagram-media"
+            data-instgrm-captioned
+            data-instgrm-permalink="https://www.instagram.com/p/placeholder1/"
+            data-instgrm-version="14"
+            style="width:100%; margin:0;">
+            <a href="https://www.instagram.com/explore/tags/asuncion/" target="_blank">
+              📸 Post de Instagram sobre Asunción — reemplazá con tu embed
+            </a>
+          </blockquote>
+
+          <blockquote
+            class="instagram-media"
+            data-instgrm-captioned
+            data-instgrm-permalink="https://www.instagram.com/p/placeholder2/"
+            data-instgrm-version="14"
+            style="width:100%; margin:0;">
+            <a href="https://www.instagram.com/explore/tags/paraguay/" target="_blank">
+              📸 Post de Instagram sobre Paraguay — reemplazá con tu embed
+            </a>
+          </blockquote>
+
+          <blockquote
+            class="instagram-media"
+            data-instgrm-captioned
+            data-instgrm-permalink="https://www.instagram.com/p/placeholder3/"
+            data-instgrm-version="14"
+            style="width:100%; margin:0;">
+            <a href="https://www.instagram.com/explore/tags/costaneraasuncion/" target="_blank">
+              📸 Post de Instagram sobre la Costanera — reemplazá con tu embed
+            </a>
+          </blockquote>
+        </div>
+      </section>
+
+    </div><!-- /container -->
+
+    <!-- ✅ FOOTER (fuera del container para ancho completo) -->
     <footer>
       <div class="footer-grid">
 
@@ -177,10 +288,6 @@
       </div>
     </footer>
 
-    <script async src="//www.instagram.com/embed.js"></script>
-  </body>
-</html>
-      </footer>
     <script async src="//www.instagram.com/embed.js"></script>
   </body>
 </html>
